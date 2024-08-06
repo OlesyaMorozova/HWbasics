@@ -7,33 +7,33 @@ import static org.testng.Assert.*;
 public class CashbackHackServiceTest {
 
     @Test
-    void purchase900() {
+    public void purchase900() {
         CashbackHackService service = new CashbackHackService();
         int amount = 900;
 
-        int actual = service.remain (amount);
+        int actual = service.remain(amount);
         int expected = 100;
 
         assertEquals(actual, expected);
     }
 
     @Test
-    void purchase2200() {
+    public void purchase2200() {
         CashbackHackService service = new CashbackHackService();
         int amount = 2200;
 
-        int actual = service.remain (amount);
+        int actual = service.remain(amount);
         int expected = 800;
 
         assertEquals(actual, expected);
     }
 
     @Test
-    void purchase1000() {
+    public void purchase1000() {
         CashbackHackService service = new CashbackHackService();
         int amount = 1000;
 
-        int actual = service.remain (amount);
+        int actual = service.remain(amount);
         int expected = 0;
 
         assertEquals(actual, expected);
